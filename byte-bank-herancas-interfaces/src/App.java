@@ -27,5 +27,14 @@ public class App {
 
     System.out.println(contaCorrente.getSaldo());
     System.out.println(contaPoupanca.getSaldo());
+
+    SistemaInterno sistemaInterno = new SistemaInterno();
+    Administrador administrador = new Administrador();
+
+    gerente.setSenha(2222);
+    administrador.setSenha(3333);
+
+    sistemaInterno.autenticar(gerente);
+    sistemaInterno.autenticar(administrador);
   }
 }
