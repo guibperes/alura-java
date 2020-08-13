@@ -21,5 +21,17 @@ public class App {
     controleBonificacao.registrarFuncionario(editorVideo);
 
     System.out.println(controleBonificacao.getTotal());
+
+    ContaCorrente contaCorrente = new ContaCorrente(0001, 1111);
+    ContaPoupanca contaPoupanca = new ContaPoupanca(0001, 1111);
+
+    contaCorrente.setTitular(funcionario);
+    contaPoupanca.setTitular(funcionario);
+
+    contaCorrente.depositar(1000);
+    contaCorrente.transferir(contaPoupanca, 500);
+
+    System.out.println(contaCorrente.getSaldo());
+    System.out.println(contaPoupanca.getSaldo());
   }
 }
