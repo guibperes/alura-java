@@ -40,5 +40,16 @@ public class App {
     sistemaInterno.autenticar(gerente);
     sistemaInterno.autenticar(administrador);
     sistemaInterno.autenticar(cliente);
+
+    CalculadorImposto calculadorImposto = new CalculadorImposto();
+
+    SeguroVida seguroVida = new SeguroVida(0001, 1111);
+    AcaoBolsa acaoBolsa = new AcaoBolsa(0001, 1111);
+
+    calculadorImposto.registrarTributavel(contaCorrente);
+    calculadorImposto.registrarTributavel(seguroVida);
+    calculadorImposto.registrarTributavel(acaoBolsa);
+
+    System.out.println(calculadorImposto.getTotal());
   }
 }
