@@ -1,4 +1,5 @@
 public class Autenticador {
+
   private int senha;
 
   public boolean autenticar(int senha) {

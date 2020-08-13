@@ -1,4 +1,5 @@
 public class Gerente extends Funcionario implements Autenticavel {
+
   private final Autenticador autenticador = new Autenticador();
 
   @Override
