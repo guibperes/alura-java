@@ -30,11 +30,14 @@ public class App {
 
     SistemaInterno sistemaInterno = new SistemaInterno();
     Administrador administrador = new Administrador();
+    Cliente cliente = new Cliente();
 
     gerente.setSenha(2222);
     administrador.setSenha(3333);
+    cliente.setSenha(4444);
 
     sistemaInterno.autenticar(gerente);
     sistemaInterno.autenticar(administrador);
+    sistemaInterno.autenticar(cliente);
   }
 }
