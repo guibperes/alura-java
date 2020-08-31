@@ -29,12 +29,6 @@ public abstract class Conta {
   }
 
   public void transferir(Conta conta, double valor) {
-    boolean podeTransferir = this.podeRetirar(valor);
-
-    if (!podeTransferir) {
-      throw new SaldoInsulficienteException(valor);
-    }
-
     this.sacar(valor);
     conta.depositar(valor);
   }

@@ -25,7 +25,7 @@ public class App {
 
     contaCorrente.depositar(1000);
     // contaCorrente.sacar(1200);
-    // contaCorrente.transferir(contaPoupanca, 1100);
+    contaCorrente.transferir(contaPoupanca, 1100);
 
     System.out.println(contaCorrente.getSaldo());
     System.out.println(contaPoupanca.getSaldo());
