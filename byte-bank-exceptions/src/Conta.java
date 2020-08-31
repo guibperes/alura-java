@@ -18,25 +18,25 @@ public abstract class Conta {
     this.saldo += valor;
   }
 
-  public boolean sacar(double valor) {
+  public void sacar(double valor) {
     boolean podeSacar = this.podeRetirar(valor);
 
-    if (podeSacar) {
-        this.saldo -= valor;
+    if (!podeSacar) {
+      throw new SaldoInsulficienteException(valor);
     }
 
-    return podeSacar;
+    this.saldo -= valor;
   }
 
-  public boolean transferir(Conta conta, double valor) {
+  public void transferir(Conta conta, double valor) {
     boolean podeTransferir = this.podeRetirar(valor);
 
-    if (podeTransferir) {
-      this.sacar(valor);
-      conta.depositar(valor);
+    if (!podeTransferir) {
+      throw new SaldoInsulficienteException(valor);
     }
 
-    return podeTransferir;
+    this.sacar(valor);
+    conta.depositar(valor);
   }
 
   public double getSaldo() {
