@@ -1,3 +1,5 @@
+package meuapp.conta;
+
 public class ContaPoupanca extends Conta {
 
   public ContaPoupanca(int agencia, int numero) {

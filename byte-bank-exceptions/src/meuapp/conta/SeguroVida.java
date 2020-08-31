@@ -1,3 +1,7 @@
+package meuapp.conta;
+
+import meuapp.tributo.Tributavel;
+
 public class SeguroVida extends Conta implements Tributavel {
 
   public SeguroVida(int agencia, int numero) {

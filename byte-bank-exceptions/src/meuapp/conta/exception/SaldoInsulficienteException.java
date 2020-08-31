@@ -1,3 +1,5 @@
+package meuapp.conta.exception;
+
 public class SaldoInsulficienteException extends RuntimeException {
 
   private static final long serialVersionUID = 1L;

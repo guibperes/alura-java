@@ -1,3 +1,7 @@
+package meuapp.conta;
+
+import meuapp.tributo.Tributavel;
+
 public class AcaoBolsa extends Conta implements Tributavel {
 
   public AcaoBolsa(int agencia, int numero) {

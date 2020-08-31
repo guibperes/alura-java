@@ -1,3 +1,8 @@
+package meuapp.conta;
+
+import meuapp.conta.exception.SaldoInsulficienteException;
+import meuapp.pessoa.funcionario.Funcionario;
+
 public abstract class Conta {
 
   private double saldo;

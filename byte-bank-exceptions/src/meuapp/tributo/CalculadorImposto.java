@@ -1,3 +1,5 @@
+package meuapp.tributo;
+
 public class CalculadorImposto {
   private double total;
 

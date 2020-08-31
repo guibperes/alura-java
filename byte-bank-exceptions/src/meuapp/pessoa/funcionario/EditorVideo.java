@@ -1,3 +1,5 @@
+package meuapp.pessoa.funcionario;
+
 public class EditorVideo extends Funcionario {
 
   @Override

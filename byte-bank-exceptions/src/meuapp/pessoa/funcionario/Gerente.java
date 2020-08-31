@@ -1,4 +1,9 @@
-public class Cliente implements Autenticavel {
+package meuapp.pessoa.funcionario;
+
+import meuapp.interno.Autenticador;
+import meuapp.interno.Autenticavel;
+
+public class Gerente extends Funcionario implements Autenticavel {
 
   private final Autenticador autenticador = new Autenticador();
 
@@ -10,5 +15,10 @@ public class Cliente implements Autenticavel {
   @Override
   public void setSenha(int senha) {
     this.autenticador.setSenha(senha);
+  }
+
+  @Override
+  public double getBonificacao() {
+    return super.getSalario();
   }
 }

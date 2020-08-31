@@ -1,4 +1,9 @@
-public class Gerente extends Funcionario implements Autenticavel {
+package meuapp.pessoa.funcionario;
+
+import meuapp.interno.Autenticador;
+import meuapp.interno.Autenticavel;
+
+public class Administrador extends Funcionario implements Autenticavel {
 
   private final Autenticador autenticador = new Autenticador();
 
@@ -14,6 +19,6 @@ public class Gerente extends Funcionario implements Autenticavel {
 
   @Override
   public double getBonificacao() {
-    return super.getSalario();
+    return super.getSalario() + 0.3;
   }
 }

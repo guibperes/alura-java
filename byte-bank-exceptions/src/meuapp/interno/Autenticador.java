@@ -1,3 +1,5 @@
+package meuapp.interno;
+
 public class Autenticador {
 
   private int senha;

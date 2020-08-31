@@ -1,3 +1,5 @@
+package meuapp.pessoa.funcionario;
+
 public class ControleBonificacao {
 
   private double total;

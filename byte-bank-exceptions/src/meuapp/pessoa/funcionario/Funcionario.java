@@ -1,3 +1,5 @@
+package meuapp.pessoa.funcionario;
+
 public abstract class Funcionario {
 
   private String nome;

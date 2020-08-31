@@ -1,3 +1,7 @@
+package meuapp.conta;
+
+import meuapp.tributo.Tributavel;
+
 public class ContaCorrente extends Conta implements Tributavel {
 
   public ContaCorrente(int agencia, int numero) {
