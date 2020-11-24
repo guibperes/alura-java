@@ -14,5 +14,9 @@ public class IntegerApp {
     System.out.println(Integer.parseInt("10a", 16));
     System.out.println(Integer.parseInt("10"));
     System.out.println(Integer.parseInt("10", 10));
+
+    Number numero = Integer.valueOf(10);
+
+    System.out.println(numero);
   }
 }
